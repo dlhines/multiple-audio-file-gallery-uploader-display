@@ -1,0 +1,146 @@
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#audio-uploader-display #gallery_load {
+  background-color: #EEE;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 0 16px 0;
+}
+#audio-uploader-display #gallery_load #audio_sortable span {
+  border: 2px solid #EEE;
+  box-shadow: 0 0 1px 1px #999;
+  margin: 0;
+  vertical-align: middle;
+  transition: box-shadow .1s, border .1s;
+  width: 160px;
+  height: 160px;
+  font-size: 1.4rem;
+}
+
+#audio-uploader-display #gallery_load #audio_sortable span:hover {
+  cursor: pointer;
+}
+
+#audio-uploader-display #gallery_load #audio_sortable span.remove {
+  border: 2px solid red;
+}
+
+/* audio_sortable */
+#audio-uploader-display #gallery_load #audio_sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#audio-uploader-display #gallery_load #audio_sortable ul {
+  display: inline-block;
+}
+#audio-uploader-display #gallery_load #audio_sortable li {
+  background: #a9bdd3;
+  background: -moz-radial-gradient(center, ellipse cover,  #a9bdd3 1%, #dce1e5 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  #a9bdd3 1%,#dce1e5 100%);
+  background: radial-gradient(ellipse at center,  #a9bdd3 1%,#dce1e5 100%);
+  filter: progid:DXaudioTransform.Microsoft.gradient( startColorstr='#a9bdd3', endColorstr='#dce1e5',GradientType=1 );
+
+  border-radius: 5px;
+  margin: 5px;
+  padding: .8em;
+  width: auto;
+  display: inline-block;
+}
+#audio-uploader-display input[type="button"] {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+#audio-uploader-display input[type="button"]:hover {
+  cursor: pointer;
+}
+#audio-uploader-display #select_audio {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#audio-uploader-display #select_audio {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#audio-uploader-display #delete_audio {
+  background-color: #f76f6f;
+  color: #000;
+}
+
+/* Instructions */
+#audio-uploader-display #instructions {
+  background-color: #e2e2e2;
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+#audio-uploader-display #instructions p.instructions_header {
+  background-color: #666;
+  border-radius: 3px;
+  color: #EEE;
+  font-size: 1.1rem;
+  padding: 5px;
+  margin-bottom: 0;
+}
+#audio-uploader-display #instructions p.instructions_header:hover {
+  cursor: pointer;
+}
+
+#audio-uploader-display #instructions section {
+  display: none;
+  margin: 10px;
+}
+#audio-uploader-display #instructions section .no-save {
+  font-size: 1.1rem;
+  color: #000;
+  background: #EEE;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px #999;
+  margin: 7px;
+  padding: 5px;
+}
+#audio-uploader-display #instructions section .controls {
+  float: left;
+  min-height: 200px;
+  padding: 5px;
+  width: 23.6%;
+}
+#audio-uploader-display #instructions section .controls:nth-child(even) {
+  margin: 0 .5%;
+}
+#audio-uploader-display #instructions section .controls h4 {
+  border-bottom: 1px solid #999;
+  margin: 0 0 10px 0;
+  font-size: .8rem;
+}
+
+#audio-uploader-display #instructions section .caveats {
+  background: #EEE;
+}
+#audio-uploader-display #instructions section .caveats h4 {
+  border-bottom: 0;
+  border-radius: 3px;
+  background: #F76F6F;
+  color: #FFF;
+  font-weight: bold;
+  padding: 3px;
+}
+
+#audio-uploader-display #instructions section .caveats div {
+  border: 1px solid #EEE;
+  border-radius: 3px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+#audio-uploader-display #instructions section .caveats div ul {
+  list-style-type: disc !important;
+  font-size: .7rem;
+}
